@@ -1,0 +1,60 @@
+<head>
+  <title>Registration Form</title>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="STYLE.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="myFunctions.js"></script>
+    
+  
+  
+</head>
+<body>
+  <section class="projects" id="pro" dir="rtl"></section>
+
+  <section class="container">
+  <header>Registration Form  MSW For Trading</header>
+      <form class="form" action="#">
+        <div class="input-box">
+          <label>:الاسم الكامل</label>
+          <input type="text"  type="text" id="fname" name="fname"  placeholder="أدخل الاسم الكامل"  >
+        </div>
+        <div class="column">
+        <div class="input-box">
+          <label>:الرقم الوطني</label>
+          <input type="id natiunal number" id="number_id" name="number_id" required  maxlength="11"  placeholder="أدخل الرقم الوطني المؤالف من 11 خانة">
+          </div>
+          <div class="input-box">
+          <label>:تاريخ الولادة</label>
+          <input id="date" name="date"  type="date" placeholder="أدخل تاريخ الميلاد" >
+        </div>
+      </div>
+                      
+      <div class="input-box num">
+        <label>:رقم الموبايل</label>
+        <input id="phone" name="phone"  type="tel number" placeholder=" أدخل رقم الموبايل مع مراعاة مطابقة الشبكتين " >
+      </div>
+      <div class="input-box num">
+        <label>Email:</label>
+        <input  id="email" name="email"  type="email" placeholder=" ex info@email.com اكتب الايميل الخاص بك ">
+        </div>
+        <div class="input-box">
+        <label onload="Captcha();"> </label>
+      </div>
+      </br>
+      <div class="capt"> 
+        <h2 type="text" id="mainCaptcha"></h2>
+       <p><input class="captchabutton" type="button" value="إعادة توليد" style="width:120px;" id="refresh" onclick="Captcha();"/></p> 
+       <input type="text" id="txtInput"/>    
+       <input class="captchabutton" id="Button1" type="button" value="تحقق"  onclick="alert(ValidCaptcha());"/>
+                       
+      </div>
+      
+      <button>Submit</button>
+    </form>
+    <p id="error_validate" hidden></p>
+    <p id="done_validate" hidden></p>
+    
+  </section>
+</body>

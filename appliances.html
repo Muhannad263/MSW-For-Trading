@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <title>   MSW For Trading </title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="STYLE.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <script src="myFunctions.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1> <a href="home.html"> </a> </h1>
+        </header>
+        <nav>
+            <ul class="navbar">
+                <li> <a href="home.html"> home </a> </li>
+                <li> <a href="aboutus.html">  AboutUs </a> </li>
+                <li> <a href="index.html">  الصفحة الرئيسية </a> </li>   
+
+            </ul>
+        </nav>
+        <section>
+            <table>
+                <thead>
+                    <tr>
+                        <th>صورة</th>
+                        <th>السعر</th>
+                        <th>التفاصيل</th>
+                        <th>المنتج</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                       <tr>
+                        <td>
+                            <img src="أدوات كهربائية/مروحة.jpg"  class="productImage" /> <br> <br>
+                            <button class="addtocart" id="add" onclick="add(1)"> Add to cart </button>
+                        </td>
+                         <td class="txt" id="price1"> 750000 s.p  </td>
+                     <td class="details">
+                            <li> تعمل على الكهرباء </li>
+                            <li> محرك نحاسي</li>
+                            <li> 5 سرعات </li>
+                            <li> 3 شفرات </li>
+                            <li> القياس : 60 انش </li>
+                            <li> براد متنوع الاستعمالات </li>
+                      </td>
+                      <td class="txt" id="product1">مروحة سقفية رامكو </td>
+                        </tr>
+                        <tr>
+                         <td>
+                         <img src="أدوات كهربائية/خلاط.jpg" class="productImage"> <br> <br>
+                            <button class="addtocart"  id="add" onclick="add(2)"> Add to cart </button>
+                        </td>
+                        
+                         <td class="txt" id="price2"> 625000 s.p </td>
+                    <td class="details"> 
+                            <li> تعمل على الكهرباء و البطارية مع الية الحفاظ على البطارية من الافراط في الشحن و التفريغ لحماية البطارية.</li>
+                            <li>ريموت كونترول.</li>
+                            <li>شاشة رقمية لتحديد السرعة.</li>
+                            <li>مؤشر طاقة للبطارية.</li>
+                            <li>5 سرعات.</li>
+                            <li>  اضاءة LED.</li>
+                            <li> مؤقت زمني.</li>
+                            <li>استطاعة 43 واط</li>
+                        </td>
+                         <td class="txt" id="product2">مروحة 18 انش. هاي لايف</td>
+                    </tr>
+
+                    <tr>  
+                        <td>
+                         <img src="أدوات كهربائية/شوفاج.jpg"/> <br> <br>
+                         <button class="addtocart"  id="add" onclick="add(3)"> Add to cart </button>
+                        </td>
+                        <td class="txt" id="price3"> 1423000 s.p </td>
+                        <td class="details"> 
+                            <li> استطاعة 2800W </li>
+                            <li> 15 شفرة </li>
+                            <li> ثلاث مستويات لدرجة الحرارة </li>
+                            <li> مؤشر تشغيل </li>
+                            <li> ترموستات </li>
+                            <li> آمان اثناء التشغيل </li>
+                            <li> مسكة و عجلات لسهولة الحركة </li>
+                            <li> امكانية لف الكبل للتخزين </li>
+                            <li> مؤقت زمني لمدة 24 ساعة </li>
+                            <li> مروحة 400W </li>
+                            <li> منشر ملابس </li>
+                            <li>  قياسات الشفرات: 160mmx600mm </li>
+                        </td>
+                        <td class="txt" id="product3">شوفاج زيت 15 شفرة هاي لايف</td>
+                    </tr> 
+                    <tr> 
+                        <td>
+                        <img src="أدوات كهربائية/دفاية كهربا.jpg" /> <br> <br>
+                             <button class="addtocart"  id="add" onclick="add(4)"> Add to cart </button>
+                        </td>
+                        <td class="txt" id="price4"> 800000 s.p</td>
+                        <td class="details">
+                            <li> عاكس مشع كبير الحجم </li>
+                            <li> تدفئة عن طريق الاشعة تحت الحمراء، </li>
+                            <li> مروحة </li>
+                            <li> أنابيب كوارتز (طول 57 سم) </li>
+                            <li> ترموستات قابل للتعديل </li>
+                            <li> رأس أمان فوق زر التشغيل </li>
+                            <li> مروحة مساعدة لتدفئة الهواء بسرعة </li>
+                            <li> مزودة بعجلات لسهولة الحركة </li>
+
+                        </td>
+                        <td class="txt" id="product4">مدفأة كهربائية استطاعة 2400w هاي لايف</td>
+                    </tr> 
+                    <tr>
+                         <td>
+                        <img src="أدوات كهربائية/صوبية غاز.jpg" /> <br> <br>
+                        <button class="addtocart"  id="add" onclick="add(5)"> Add to cart </button>
+                        </td>
+                        <td class="txt" id="price5"> 1550000 s.p</td>
+                        <td class="details">
+                            <li> قداحة الكترونية سهلة الاستخدام </li>
+                            <li> نظام تدفئة بالأشعة تحت الحمراء مع توفير الطاقة </li>
+                            <li> جهاز آمان لحماية من تسريب الغاز </li>
+                            <li>  3 صفائح سيراميك مع ثلاث مستويات للطاقة </li>
+                            <li> استطاعة من 1.3kw الى 4.1kw </li>
+                            <li> استطاعة كهربائية: 400Wx3,220v-240v/50Hz </li>
+                            <li> سهلة الاستخدام و الحركة </li>
+                            <li> مساحة لجرة الغاز تصل الى 15kg </li>
+                            <li> حساس لمستوى الاكسجين في الجو و جهاز منع الميلان </li>
+                            <li>مروحة توربو مع وشيعة</li>
+                        </td>
+                        <td class="txt" id="product5">مدفأة غاز و كهرباء هاي لايف </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <img src="أدوات كهربائية/بلاندر.jpg" /> <br> <br>
+                        <button class="addtocart"  id="add" onclick="add(6)"> Add to cart </button>
+                        </td>
+                        <td class="txt" id="price6"> 765000 s.p </td>
+                        <td class="details">
+                            <li>  استطاعة: 1000w </li>
+                            <li> ضجيج منخفض </li>
+                            <li> شفرة من ستانلس ستيل </li>
+                            <li> سرعات متعددة مع توربو </li>
+                            <li> محرك نحاسي </li>
+                        </td>
+                        <td class="txt" id="product6">خلاط يدوي </td>
+                    </tr>
+                     <tr>
+                        <td>
+                        <img src="أدوات كهربائية/عصارة فواكه.jpg" /> <br> <br>
+                        <button class="addtocart"  id="add" onclick="add(7)"> Add to cart </button>
+                        </td>
+                        <td class="txt" id="price7"> 1235000  s.p</td>
+                        <td class="details">
+                            <li>  إستطاعة: 1000W </li>
+                            <li> سعة 1.7 لتر </li>
+                            <li>  فوهة مانعة للتسريب </li>
+                            <li> إناء عصير سعة 1 لتر </li>
+                            <li> ستانلس ستيل </li>
+                            <li> سهولة فك و تنظيف المنتج </li>
+                            <li>  220-240V - 50/60Hz  </li>
+                        </td>
+                        <td class="txt" id="product7">
+                            عصارة فواكه</td> 
+                    </tr> 
+                    <tr>
+                        <td>
+                        <img src="أدوات كهربائية/طباخ وشيعة.jpg" /> <br> <br>
+                        <button class="addtocart"  id="add" onclick="add(8)"> Add to cart </button>
+                        </td>
+                        <td class="txt" id="price8"> 385000 s.p </td>
+                        <td class="details"> 
+                            <li> استطاعة: 2000W </li>
+                            <li> رأس سيراميك </li>
+                            <li>  تحكم باللمس </li>
+                            <li> إطار ألمنيوم ذهبي </li>
+                            <li>  قفل للحماية </li>
+                            <li> سطح عمل كرستالي مصقول </li>
+                            <li> مؤقت 4 ساعات </li>
+                            <li> 8 مستويات طاقة </li>
+                            <li> طول الكبل: 1.5 متر </li>
+                            <li>200~240V. 50/60Hz-</li>
+
+                        
+                        </td>
+                        <td class="txt" id="product8">طباخ ليزري</td>
+                    </tr> 
+                    <tr>
+                        <td>
+                        <img src="أدوات كهربائية/فرامة لحمة.jpg" /> <br> <br>
+                        <button class="addtocart"  id="add" onclick="add(9)"> Add to cart </button>
+                        </td>
+                        <td class="txt" id="price9"> 3610000 s.p</td>
+                        <td class="details"> 
+                            <li> الاستطاعة: 1600 واط </li>
+                            <li> ستانلس ستيل مع رأس المنيوم </li>
+                            <li> شفرة فرم من الستانلس ستيل. </li>
+                            <li> 3 مصفاة فرم (ناعم، وسط و خشن) </li>
+                            <li> رأس عمل النقانق. </li>
+                            <li> رأس عمل الكبة. </li>
+                            <li>  ميزة عكس الدوران للتخلص من حالة التصاق المواد </li>
+                        </td>
+                        <td class="txt" id="product9">فرامة لحمة </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <img src="أدوات كهربائية/غلاية ماء .jpg" /> <br> <br>
+                        <button class="addtocart"  id="add" onclick="add(10)"> Add to cart </button>
+                        </td>
+                        <td class="txt" id="price10"> 290000 s.p </td>
+                        <td class="details">
+                            <li> ستانلس ستيل </li>
+                            <li> سعة: 1.8 لتر </li>
+                            <li> قاعدة قابلة للدوران 360 درجة </li>
+                            <li> امكانية فتح الغطاء بشكل اوتوماتيكي </li>
+                            <li> ميزة التوقف عن العمل بشكل تلقائي عند غليان الماء </li>
+                            <li> حماية عند التشغيل بدون ماء </li>
+                            <li> حجرة لتخزين الكبل </li>
+                        </td>
+                        <td class="txt" id="product10">غلاية ماء كهربائية</td>
+                    </tr> 
+                    <tr>
+                        <td>
+                        <img src="أدوات كهربائية/مصفف شعر.jpg" /> <br> <br>
+                        <button class="addtocart"  id="add" onclick="add(11)"> Add to cart </button>
+                        </td>
+                        <td class="txt" id="price11">420000 s.p</td>
+                        <td class="details"> 
+                            <li> مجفف شعر عالي الأداء </li>
+                            <li> استطاعة 2300 واط </li>
+                            <li> سرعتان  </li>
+                            <li> 3 مستويات حرارة </li>
+                            <li> نظام تبريد ذاتي </li>
+                        </td>
+                        <td class="txt" id="product11">مصفف شعر</td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <img src="أدوات كهربائية/مسبل شعر سيراميك.jpg" /> <br> <br>
+                        <button class="addtocart"  id="add" onclick="add(12)"> Add to cart </button>
+                        </td>
+                        <td class="txt" id="price12"> 445000 s.p </td>
+                        <td class="details"> 
+                            <li>  استطاعة 30 واط </li>
+                            <li> شاشة ديجيتال </li>
+                            <li> تحكم بدرجة الحرارة 140-200 درجة </li>
+                            <li>  ترموستات </li>
+                            <li>  ميزة عمل للشعر الجاف أو الرطب </li>
+                        </td>
+                        <td class="txt" id="product12">مسبل شعر سيراميك</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="أدوات كهربائية/مجعد شعر سيراميك.jpg"> <br> <br>
+                            <button class="addtocart"  id="add" onclick="add(13)">Add to cart</button>
+                        </td>
+                        <td class="txt" id="price13">495000 s.p </td>
+                        <td class="details">
+                            <li>استطاعة: 55 واط</li>
+                            <li>شاشة ديجيتال</li>
+                            <li>تحكم بدرجة الحرارة بين 80 - 210 درجة</li>
+                        </td>
+                        <td class="txt" id="product13">
+                            مجعد شعر سيراميك</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="أدوات كهربائية/فلتر مطبخ افقي .jpg"> <br> <br>
+                            <button class="addtocart"  id="add" onclick="add(14)">Add to cart</button>
+                        </td>
+                        <td class="txt" id="price14"> 1585000 s.p </td>
+                        <td class="details">
+                            <li>90 سم</li>
+                            <li>محركين</li>
+                            <li>اضاءة LED</li>
+                            <li>تدفق الهواء: 380 م3/ساعة</li>
+                            <li>ثلاث سرعات</li>
+                            <li>أقراص فحمية</li>
+                            <li> 3x5 طبقات ألمنيوم</li>
+                            <li>اللون: ستانلس ستيل</li>
+                        </td>
+                        <td class="txt" id="product14"> 
+                            فلتر مطبخ افقي  </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="أدوات كهربائية/كمان فلتر مطبخ افقي .jpg"> <br> <br>
+                            <button class="addtocart"  id="add" onclick="add(15)">Add to cart</button>
+                        </td>
+                        <td class="txt" id="price15">1500000 s.p </td>
+                        <td class="details">
+                            <li>60 سم</li>
+                            <li>محرك واحد</li>
+                            <li>تدفق الهواء: 180 م3/ساعة</li>
+                            <li>ثلاث سرعات</li>
+                            <li> قرص فحمي واحد</li>
+                            <li> 2x5 طبقات ألمنيوم</li>
+                            <li>اللون: اسود</li>
+                        </td>
+                        <td class="txt" id="product15"> فلتر مطبخ افقي  </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="أدوات كهربائية/فلتر مطبخ هرمي.jpg"> <br> <br>
+                            <button class="addtocart"  id="add" onclick="add(16)">Add to cart</button>
+                        </td>
+                        <td class="txt" id="price16"> 1640000 s.p</td>
+                        <td class="details">
+                            <li>فلتر هرمي 90 سم Angled</li>
+                            <li>زجاج أسود</li>
+                            <li>3 سرعات</li>
+                            <li>تحكم باللمس</li>
+                            <li>قوة شفط: 800 م3/ساعة</li>
+                            <li>اضاءة LED</li>
+                        </td>
+                        <td class="txt" id="product16"> فلتر مطبخ هرمي </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="أدوات كهربائية/فلتر مطبخ زجاجي .jpg"> <br> <br>
+                            <button class="addtocart"  id="add" onclick="add(17)">Add to cart</button>
+                        </td>
+                        <td class="txt" id="price17">  1700000 s.p </td>
+                        <td class="details">
+                            <li>90 سم</li>
+                            <li>قوة شفط:  1000 م3/ساعة </li>
+                            <li>شاشة الكترونية مضاءة</li>
+                            <li>3 سرعات</li>
+                            <li>فلتر 3 طبقات ألمنيوم</li>
+                            <li> اضاءة LED</li>
+                            <li>أقراص فحمية</li>
+                            <li>ستانلس ستيل مع زجاج</li>
+                        </td>
+                        <td class="txt" id="product17"> فلتر مطبخ زجاجي ريفيرا  </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="أدوات كهربائية/مبرد مياه.jpeg"> <br> <br>
+                            <button class="addtocart"  id="add" onclick="add(18)">Add to cart</button>
+                        </td>
+                        <td class="txt" id="price18"> 1300000 s.p </td>
+                        <td class="details">
+                            <li>بارد ساخن</li>
+                            <li> شاشة ديجيتال</li>
+                            <li> متوفر مع حجرة تبريد أو بدون حجرة تبريد</li>
+                            <li>حنفيتان</li>
+                            <li>اللون: أسود</li>
+                            </td>
+                        <td class="txt" id="product18"> براد مياه  </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="أدوات كهربائية/مكنسة كهربائية.jpg"> <br> <br>
+                            <button class="addtocart"  id="add" onclick="add(19)">Add to cart</button>
+                        </td>
+                        <td class="txt" id="price19"> 1140000 s.p </td>
+                        <td class="details">
+                            <li>نظام سايكلونيك بدون أكياس غبار.</li>
+                            <li> مقبض تحكم على ذراع المكنسة لسهولة الاستخدام.</li>
+                            <li>رأس دوار لتنظيف المناطق الحرجة التي يصعب للرأس الثابت الوصول إليها.</li>
+                            <li> تحكم بطول ذراع المكنسة.</li>
+                            <li> برامج تنظيف متعددة.</li>
+                            <li> صامتة.</li>
+                            <li>نصف قطر العمل 10 متر</li>
+                            <li> رأس شفط توربو.</li>
+                            <li> سعة الخزان 1.5 ليتر.</li>
+                        </td>
+                        <td class="txt" id="product19"> مكنسة كهربائية هوفر  </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="أدوات كهربائية/مكنسة كهربائية مسطحة.jpg"> <br> <br>
+                            <button class="addtocart"  id="add" onclick="add(20)">Add to cart</button>
+                        </td>
+                        <td class="txt" id="price20">1170000 s.p </td>
+                        <td class="details">
+                            <li>القوة: 1,500 واط.</li>
+                            <li> نظام سايكلونيك بدون أكياس غبار.</li>
+                            <li>تقنية AirVolutionTM لتنظيف أسرع وأعمق.</li>
+                            <li>رؤوس متعددة للتنظيف.</li>
+                            <li> مقبض للتحكم بقوة الشفط لسهولة الاستخدام.</li>
+                            <li>إمكانية التحكم بطول ذراع المكنسة.</li>
+                            <li> فلتر HEPA خاص لمرضى التحسس قابل للغسيل</li>
+                        </td>
+                        <td class="txt" id="product20"> مكنسة كهربائية مسطحة هوفر  </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="أدوات كهربائية/مكنسة يدوية.jpg"> <br> <br>
+                            <button class="addtocart"  id="add" onclick="add(21)">Add to cart</button>
+                        </td>
+                        <td class="txt" id="price21"> 850000 s.p </td>
+                        <td class="details">
+                            <li>القوة: 50 واط.</li>
+                            <li>6 بطاريات قابلة للشحن، ويبلغ جهد البطارية الواحدة  7.2 ڤولت.</li>
+                            <li>مدة العمل 14 دقيقة.</li>
+                            <li> مؤشر لشحن البطارية.</li>
+                            <li> فلتر HEPA خاص لمرضى التحسس قابل للغسيل.</li>
+                            <li> نظام سايكلونيك بدون أكياس.</li>
+                            <li>خفيفة الوزن</li>
+                            <li> سهلة الاستعمال</li>
+                            <li></li>
+                        </td>
+                        <td class="txt" id="product21"> مكنسة يدوية هوفر </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="أدوات كهربائية/شاشة 43 بوصة.jpg"> <br> <br>
+                            <button class="addtocart"  id="add" onclick="add(22)">Add to cart</button>
+                        </td>
+                        <td class="txt" id="price22">4700000 s.p </td>
+                        <td class="details">
+                            <li>Full HD</li>
+                            <li>Android</li>
+                            <li>HDMI</li>
+                            <li>USB</li>
+                        </td>
+                        <td class="txt" id="product22" > شاشة 43 بوصة ذكية  </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="أدوات كهربائية/شاشة 75 بوصة.jpg"> <br> <br>
+                            <button class="addtocart"  id="add" onclick="add(23)">Add to cart</button>
+                        </td>
+                        <td class="txt" id="price23"> 9800000 s.p</td>
+                        <td class="details">
+                            <li>سمارت</li>
+                            <li>UHD 4K</li>
+                            <li> USB</li>
+                            <li>HDMI</li>
+                            <li>WIFI</li>
+                            <li>اندرويد</li>
+                        </td>
+                        <td class="txt" id="product23"> شاشة 75 بوصة </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="أدوات كهربائية/شاشة 32.jpg"> <br> <br>
+                            <button class="addtocart"  id="add" onclick="add(24)">Add to cart</button>
+                        </td>
+                        <td class="txt" id="price24"> 3600000 s.p </td>
+                        <td class="details">
+                            <li>SMART</li>
+                            <li>Android</li>
+                            <li>USB </li>
+                            <li>HDMI</li>
+                            <li>وضوح HD </li>
+                        </td>
+                        <td class="txt" id="product24"> شاشة 32 بوصة LED </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="أدوات كهربائية/ grey-ac مكيف.jpg"> <br> <br>
+                            <button class="addtocart"  id="add" onclick="add(25)">Add to cart</button>
+                        </td>
+                        <td class="txt" id="price25">13000000 s.p </td>
+                        <td class="details">
+                            <li>متوفر بسعة تبريد
+
+                                12000 BTU, 18000 BTU, 24000 BTU</li>
+                            <li>
+                                متوفر باللون الفضي</li>
+                            <li>مرايا</li>
+                            <li>
+                                شاشة ديجيتال</li>
+                            <li>يتضمن الأنابيب و مجموعة التركيب الكاملة</li>
+                        </td>
+                        <td class="txt" id="product25">مكيف   </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="أدوات كهربائية/white-ac 2طن-1.jpg"> <br> <br>
+                            <button class="addtocart"  id="add" onclick="add(26)">Add to cart</button>
+                        </td>
+                        <td class="txt" id="price26">10000000 s.p </td>
+                        <td class="details">
+                            <li>متوفر باستطاعة تبريد 1 طن، 1.5 طن، 2 طن</li>
+                            <li>متوفر باللون الأبيض</li>
+                            <li>شاشة ديجيتال</li>
+                            <li>
+                                يتضمن الأنابيب و مجموعة التركيب الكاملة</li>
+                        </td>
+                        <td class="txt" id="product26"> مكيف 2طن </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="أدوات كهربائية/مكيف صالون.jpg"> <br> <br>
+                            <button class="addtocart"  id="add" onclick="add(27)">Add to cart</button>
+                        </td>
+                        <td class="txt" id="price27">16450000 s.p </td>
+                        <td class="details">
+                            <li>:متوفر بسعة تبريد 36000 BTU ,
+                                48000 BTU </li>
+                            <li>متوفر باللون الأبيض</li>
+                            <li>شاشة ديجيتال</li>
+                            <li>يتضمن الأنابيب و مجموعة التركيب الكاملة</li>
+                        </td>
+                        <td class="txt" id="product27">مكيف صالون  </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="أدوات كهربائية/غسالة 6 كيلو .jpeg"> <br> <br>
+                            <button class="addtocart"  id="add" onclick="add(28)">Add to cart</button>
+                        </td>
+                        <td class="txt" id="price28">6485000 s.p </td>
+                        <td class="details">
+                            <li>حوض بسعة 6 كغ</li>
+                            <li>سرعة التنشيف 800 دورة/الدقيقة</li>
+                            <li>اعادة التشغيل التلقائي</li>
+                            <li> عمق الكبين: 470 مم</li>
+                            <li>اللون: أبيض</li>
+                        </td>
+                        <td class="txt" id="product28"> غسالة 6 كيلو  </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="أدوات كهربائية/غسالة ٧كغ.jpg"> <br> <br>
+                            <button class="addtocart"  id="add" onclick="add(29)">Add to cart</button>
+                        </td>
+                        <td class="txt" id="price29">8000000 s.p </td>
+                        <td class="details">
+                            <li>حوض بسعة 7 كغ</li>
+                            <li>سرعة التنشيف: 1400 دورة /الدقيقة</li>
+                            <li>اللون: رمادي غامق</li>
+                            <li>شاشة ديجيتال كبيرة تظهر البرامج مع زمن الغسيل</li>
+                            <li>برامج غسيل متعددة </li>
+                            <li>قفل للوحة منعا من عبث الأطفال</li>
+                            <li>ميزة تأخير بدء التشغيل</li>
+                        </td>
+                        <td class="txt" id="product29"> غسالة 7 كيلو </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="أدوات كهربائية/بوتو غاز غطس ٤-١.jpg"> <br> <br>
+                            <button class="addtocart"  id="add" onclick="add(30)">Add to cart</button>
+                        </td>
+                        <td class="txt" id="price30">7500000 s.p </td>
+                        <td class="details">
+                            <li>العرض: 90 سم.</li>
+                            <li> 4 غاز + 1 رأس سيراميك.</li>
+                            <li>ستانلس ستيل.</li>
+                        </td>
+                        <td class="txt" id="product30">بوتو غاز غطس   </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="أدوات كهربائية/بوتو غاز غطس ٣-١.jpg"> <br> <br>
+                            <button class="addtocart"  id="add" onclick="add(31)">Add to cart</button>
+                        </td>
+                        <td class="txt" id="price31"> 6400000 s.p </td>
+                        <td class="details">
+                            <li>العرض: 60 سم.</li>
+                            <li>3 غاز + 1 توربو.</li>
+                            <li>ستانلس ستيل</li>
+                            <li> إشعال ذاتي.</li>
+                        </td>
+                        <td class="txt" id="product31"> بوتو غاز غطس  </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="أدوات كهربائية/بوتوغاز  غطس.jpg"> <br> <br>
+                            <button class="addtocart"  id="add" onclick="add(32)">Add to cart</button>
+                        </td>
+                        <td class="txt" id="price32">  7000000 s.p </td>
+                        <td class="details">
+                            <li>العرض: 70 سم.</li>
+                            <li>4 غاز + 1 توربو.</li>
+                            <li>بللور أسود. </li>
+                            <li> أمان كامل.</li>
+                            <li>إشعال ذاتي</li>
+                        </td>
+                        <td class="txt" id="product32"> بوتو غاز غطس </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="أدوات كهربائية/فرن غطس.jpg"> <br> <br>
+                            <button class="addtocart" id="add" onclick="add(33)">Add to cart</button>
+                        </td>
+                        <td class="txt" id="price33"> 9250000 s.p </td> 
+                        <td class="details">
+                            <li>60سم </li> </li>
+                            <li>ستانلس ستيل</li>
+                            <li>  سعة: 75 ليتر</li>
+                            <li> غاز/كهرباء </li>
+                            <li>شاشة ديجيتال</li>
+                            <li>تحكم باللمس</li>
+                            <li>مروحة داخلية</li>
+                        </td>
+                        <td class="txt" id="product33">فرن غطس  </td>
+                    </tr>
+                </tbody>
+                </table>
+                </section>
+                   <section class="tablecart">
+                    <center > <h2> سلة المشتريات </h2>    </center>
+                    <table dir="rtl">
+                    <thead>
+                        <th> <h2> م.  </h2></th>
+                        <th> <h2> المادة </h2></th>
+                        <th> <h2> السعر </h2></th>
+                        <th> <h2> الكمية </h2></th>
+                        <th> <h2> السعر الاجمالي (ل.س)  </h2> </th>
+                    </thead>
+                    <tbody id="details">
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td style="color:red;"> <h2>قم بإضافة المنتجات هنا </h2></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+                </table>
+                <center>
+                 <div id="next" hidden dir="rtl">
+                     <button  id="form" class="purch" id="next" onclick="next()">شراء</button>
+                     <button class="clear-cart" id="cancel" onclick="cancel()">إلغاء</button>
+                 </div>
+                </center>
+            </section>
+    </body>
+</html>    
