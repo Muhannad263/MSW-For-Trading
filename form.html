@@ -42,16 +42,14 @@
       </br>
       <div class="capt"> 
        <h2 type="text" id="mainCaptcha"></h2>
-       <p><input class="captchabutton" type="button" value="إعادة توليد" style="width:120px;" id="refresh" onclick="Captcha();"/></p> 
+       <p><input class="captchabutton" type="button" value="إعادة توليد" style="width:120px;" id="refresh" required onclick="Captcha();"/></p> 
        <input type="text" id="txtInput"/>    
        <input class="captchabutton" id="Button1" type="button" value="التحقق من أنك لست روبوت" required  onclick="alert(ValidCaptcha());"/>
       </div>
       
-      <button type="submit" onclick="validate()">Submit</button>
-      
+      <button type="submit" id="done" onclick="validate()">Submit</button>
+      <p id="error_validate"></p>
+      <p id="done_validate" ></p>
     </form>
-    <p id="error_validate" hidden></p>
-    <p id="done_validate" hidden></p>
-    
   </section>
 </body>
