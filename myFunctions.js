@@ -87,11 +87,11 @@ function Captcha(){
 	  }
 function ValidCaptcha(){
 	var string1 = removeSpaces(document.getElementById('mainCaptcha').value);
-	var string2 =         removeSpaces(document.getElementById('txtInput').value);
+	var string2 = removeSpaces(document.getElementById('txtInput').value);
 	if (string1 == string2){
-		   return true;
+		   return  "تم التحقق بنحاج";
 	}else{        
-		 return false;
+		 return "حدث خطأ! أعد المحاولة مرة أخرى";
 		 }
 }
 function removeSpaces(string){
@@ -116,7 +116,7 @@ var validChars = /^[0-9\u0600-\u06FF\s]+$/;
 	 er=1;
   } 
   if (number_id.length !=11) {
-	 document.getElementById("error_validate").innerHTML=document.getElementById("error_validate").innerHTML+"<p>يجب أن يكون رقم الهوية من 11 رقم</p>";
+	 document.getElementById("error_validate").innerHTML=document.getElementById("error_validate").innerHTML+"<p>يجب أن يكون الرقم الوطني من 11 رقم</p>";
  er=1; 
  }
 
@@ -126,11 +126,11 @@ var validChars = /^[0-9\u0600-\u06FF\s]+$/;
   }
      if ( ph .filter(x => x==(phone[0]+""+phone[1])).length==0) {
 	  er=1;
-	 document.getElementById("error_validate").innerHTML=document.getElementById("error_validate").innerHTML+"<p> +963 يجب أن يبدأ رقم الهاتف ب </p>";
+	 document.getElementById("error_validate").innerHTML=document.getElementById("error_validate").innerHTML+"<p> +963 يجب أن يبدأ رقم الموبايل ب </p>";
   }
     if (phone.length !=10) {
 	  er=1;
-	 document.getElementById("error_validate").innerHTML=document.getElementById("error_validate").innerHTML+"<p>يجب أن يكون رقم الهاتف عشر خانات</p>";
+	 document.getElementById("error_validate").innerHTML=document.getElementById("error_validate").innerHTML+"<p>يجب أن يكون رقم الموبايل 10 خانات</p>";
   }
     if (ValidCaptcha()==false) {
  er=1;	
@@ -138,7 +138,7 @@ var validChars = /^[0-9\u0600-\u06FF\s]+$/;
   }
   
 
-   document.getElementById("error_validate").hidden=false;
+   document.getElementById("error_validate").hidden="حدث خطا ما! أعد المحاولة";
    if(er==0){
 	   document.getElementById("error_validate").hidden=true;
 	   document.getElementById("done_validate").hidden=false;

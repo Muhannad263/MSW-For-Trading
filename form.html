@@ -30,7 +30,7 @@
                       
       <div class="input-box num">
         <label for="phone">:رقم الموبايل</label>
-        <input id="phone" name="phone" minlength="10" maxlength="10" type="tel" value="+963" placeholder=" syriatel , MTN أدخل رقم الموبايل مع مراعاة مطابقة الشبكتين " >
+        <input id="phone" name="phone" minlength="13" maxlength="13" type="tel" value="+963" placeholder=" syriatel , MTN أدخل رقم الموبايل مع مراعاة مطابقة الشبكتين " >
       </div>
       <div class="input-box num">
         <label  for="email">Email:</label>
@@ -41,11 +41,10 @@
       </div>
       </br>
       <div class="capt"> 
-        <h2 type="text" id="mainCaptcha"></h2>
+       <h2 type="text" id="mainCaptcha"></h2>
        <p><input class="captchabutton" type="button" value="إعادة توليد" style="width:120px;" id="refresh" onclick="Captcha();"/></p> 
        <input type="text" id="txtInput"/>    
        <input class="captchabutton" id="Button1" type="button" value="التحقق من أنك لست روبوت" required  onclick="alert(ValidCaptcha());"/>
-                       
       </div>
       
       <button type="submit" onclick="validate()">Submit</button>
