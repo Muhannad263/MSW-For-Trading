@@ -91,7 +91,7 @@ function ValidCaptcha(){
 	if (string1 == string2){
 		   return  "تم التحقق بنحاج";
 	}else{        
-		 return "حدث خطأ! أعد المحاولة مرة أخرى";
+		 return "حدث خطأ!  يرجى التحقق مرة أخرى";
 		 }
 }
 function removeSpaces(string){
@@ -112,29 +112,29 @@ var ph=["+9639"];
 var er=0;
 var validChars = /^[0-9\u0600-\u06FF\s]+$/;
   if (!validChars.test(fname)) {
-	 document.getElementById("error_validate").innerHTML="<p>يجب أن يكون الاسم باللغه العربية فقط</p>";
+	 document.getElementById("error_validate").innerHTML+alert("يجب أن يكون الاسم باللغه العربية فقط");
 	 er=1;
   } 
   if (number_id.length !=11) {
-	 document.getElementById("error_validate").innerHTML=document.getElementById("error_validate").innerHTML+"<p>يجب أن يكون الرقم الوطني من 11 رقم</p>";
+	 document.getElementById("error_validate").innerHTML=document.getElementById("error_validate").innerHTML+alert("يجب أن يكون الرقم الوطني من 11 رقم");
  er=1; 
  }
 
     if ( city .filter(x => x==(number_id[0]+""+number_id[1])).length==0) {
 	  er=1;
-	 document.getElementById("error_validate").innerHTML=document.getElementById("error_validate").innerHTML+"<p>يشير الرقمين الأوليين الى رمز المحافظة</p>";
+	 document.getElementById("error_validate").innerHTML=document.getElementById("error_validate").innerHTML+alert("يشير الرقمين الأوليين الى رمز المحافظة");
   }
      if ( ph .filter(x => x==(phone[0]+""+phone[1])).length==0) {
 	  er=1;
-	 document.getElementById("error_validate").innerHTML=document.getElementById("error_validate").innerHTML+"<p> +963 يجب أن يبدأ رقم الموبايل ب </p>";
+	 document.getElementById("error_validate").innerHTML=document.getElementById("error_validate").innerHTML+alert(" +963 يجب أن يبدأ رقم الموبايل ب ");
   }
     if (phone.length !=10) {
 	  er=1;
-	 document.getElementById("error_validate").innerHTML=document.getElementById("error_validate").innerHTML+"<p>يجب أن يكون رقم الموبايل 10 خانات</p>";
+	 document.getElementById("error_validate").innerHTML=document.getElementById("error_validate").innerHTML+alert("يجب أن يكون رقم الموبايل 10 خانات");
   }
     if (ValidCaptcha()==false) {
  er=1;	
-	document.getElementById("error_validate").innerHTML=document.getElementById("error_validate").innerHTML+"<p> التحقق أنك لست روبوت </p>";
+	document.getElementById("error_validate").innerHTML=document.getElementById("error_validate").innerHTML+alert(" التحقق أنك لست روبوت ");
   }
   
 
@@ -143,7 +143,7 @@ var validChars = /^[0-9\u0600-\u06FF\s]+$/;
 	   document.getElementById("error_validate").hidden=true;
 	   document.getElementById("done_validate").hidden=false;
 	   var price = new URLSearchParams(window.location.search).get("price");
-	   document.getElementById("done_validate", "done").innerHTML= alert+("تمت عملية الشراء بنجاح"+price+"s.p");
+	   document.getElementById("done_validate", "done").innerHTML+alert("تمت عملية الشراء بنجاح"+price+"s.p");
    }
   return false;
 }
