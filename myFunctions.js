@@ -143,10 +143,7 @@ var validChars = /^[0-9\u0600-\u06FF\s]+$/;
 	   document.getElementById("error_validate").hidden=true;
 	   document.getElementById("done_validate").hidden=false;
 	   var price = new URLSearchParams(window.location.search).get("price");
-	   document.getElementById("done_validate", "done").innerHTML+alert("تمت عملية الشراء بنجاح"+price+"s.p");
+	   document.getElementById("done_validate", "done").innerHTML= alert("تمت عملية الشراء بنجاح"+price+"s.p");
    }
   return false;
 }
-
-
-
